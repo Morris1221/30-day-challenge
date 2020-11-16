@@ -1,11 +1,12 @@
-.container-1, .container-2, .container-3{
+.container-1, .container-2, .container-3, .container-5{
     border:1px solid black;
         width: 75%;
         margin: 0 auto;
         text-align: center;
     }
 
-.flex-box-containr-1, .flex-box-container-2, .flex-box-rps{
+.flex-box-containr-1, .flex-box-container-2, .flex-box-rps,
+ .flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3{
     display: flex;
     border: 1px solid black;
     padding: 10px;
@@ -13,12 +14,35 @@
     justify-content:space-around;
 }
 
-.flex-box-containr-1 div {
+.flex-blackjack-row-1 div{
+    border: 1px solid black;
+    padding: 10px;
+    height: 350px; 
+    flex:1;
+    text-align: center;
+}
+
+.flex-blackjack-row-1 img{
+    width: 250;
+    padding: 10px;
+    
+}
+
+.flex-box-container-1 div, .flex-box-container-2 div  {
     display: flex;
     padding: 10px;
     border: 1px solid black;
 }
 
+.flex-blackjack-row-2 button{
+    border: 1px slolid black;
+}
+
+
+table, th, td{
+    padding: 5px;
+    border: 1px solid black;
+}
 
 .flex-box-container-2 img {
     padding: 10px;

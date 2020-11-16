@@ -76,7 +76,7 @@ function rpsFrontEnd(humanImageChoice, botImageChoice, finalMessage){
         'scissors': document.getElementById('scissors').src
     }
 
-    //
+    //challenge 3
     document.getElementById('rock').remove();
     document.getElementById('paper').remove();
     document.getElementById('scissors').remove();
@@ -93,4 +93,23 @@ function rpsFrontEnd(humanImageChoice, botImageChoice, finalMessage){
     document.getElementById('flex-box-rps-div').appendChild(messageDiv);
     document.getElementById('flex-box-rps-div').appendChild(botDiv);
 
+}
+
+
+//challenge 5: blcakjack
+let blackjackGame = {
+    'you': {'scoreSpan': '#your-blackjack-result', 'div': '#your-box', 'socore':0 },
+    'dealer': {'scoreSpan': '#dealer-blackjack-result', 'div': '#your-box', 'socore':0 }
+};
+
+const YOU = blackjackGame['you']
+const DEALER = blackjackGame['dealer']
+
+
+document.querySelector('#blackjack-hit-button').addEventListener('click',blackjackHit);
+
+function blackjackHit(){
+ let cardImage = document.createElement('img');
+ cardImage.src = 'static/images/1.jpg';
+ document.querySelector(YOU['div']).appendChild(cardImage);
 }

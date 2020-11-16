@@ -98,8 +98,8 @@ function rpsFrontEnd(humanImageChoice, botImageChoice, finalMessage){
 
 //challenge 5: blcakjack
 let blackjackGame = {
-    'you': {'scoreSpan': '#your-blackjack-result', 'div': '#your-box', 'socore':0 },
-    'dealer': {'scoreSpan': '#dealer-blackjack-result', 'div': '#your-box', 'socore':0 }
+    'you': {'scoreSpan': '#your-blackjack-result', 'div': '#your-box', 'score':0 },
+    'dealer': {'scoreSpan': '#dealer-blackjack-result', 'div': '#dealer-box', 'score':0 }
 };
 
 const YOU = blackjackGame['you']

@@ -5,7 +5,7 @@
         text-align: center;
     }
 
-.flex-box-containr-1, .flex-box-container-2, .flex-box-rps,
+.flex-box-container-1, .flex-box-container-2, .flex-box-rps,
  .flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3{
     display: flex;
     border: 1px solid black;
@@ -23,7 +23,7 @@
 }
 
 .flex-blackjack-row-1 img{
-    width: 250;
+    width: 70px;
     padding: 10px;
     
 }

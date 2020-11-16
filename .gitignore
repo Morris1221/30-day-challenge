@@ -1,0 +1,2 @@
+# VScodeのファイルは無視する
+*.code-workspace

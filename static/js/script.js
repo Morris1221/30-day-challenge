@@ -107,9 +107,34 @@ const DEALER = blackjackGame['dealer']
 
 
 document.querySelector('#blackjack-hit-button').addEventListener('click',blackjackHit);
+document.querySelector('#blackjack-deal-button').addEventListener('click',blackjackDeal);
+
 
 function blackjackHit(){
- let cardImage = document.createElement('img');
- cardImage.src = 'static/images/1.jpg';
- document.querySelector(YOU['div']).appendChild(cardImage);
+    showCard(YOU);
+    
+    
+}
+
+function showCard(activePlayer){
+    let cardImage = document.createElement('img');
+    cardImage.src = 'static/images/1.jpg';
+    document.querySelector(activePlayer['div']).appendChild(cardImage);
+   
+}
+
+
+function blackjackDeal(){
+    let yourImages = document.querySelector('#your-box').querySelectorAll('img');
+    let dealerImages = document.querySelector('#dealer-box').querySelectorAll('img');
+   
+    for(i=0; i < yourImages.length; i++){
+     yourImages[i].remove();
+    }
+
+    for(i=0; i < dealerImages.length; i++){
+        dealerImages[i].remove();
+       }
+   
+
 }
